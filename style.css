@@ -1,0 +1,600 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: Netflix Sans, Helvetica Neue, Segoe UI, Roboto, Ubuntu,
+    sans-serif;
+}
+.main {
+  background-image: url("images/background.jpg");
+  height: 100vh;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: max(2000px, 100vw);
+  position: relative;
+}
+.box {
+  height: 100vh;
+  width: 100%;
+  opacity: 0.6;
+  position: absolute;
+  top: 0%;
+  background-color: black;
+}
+
+nav {
+  position: relative;
+  max-width: 78vw;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 65px;
+}
+nav > span > img {
+  margin-top: 15%;
+  position: relative;
+  width: 110;
+  z-index: 10;
+}
+.btns {
+  margin-top: 1%;
+  position: relative;
+  justify-content: space-between;
+
+  z-index: 10;
+}
+
+.btns > button {
+  background: none;
+  border: none;
+  border-radius: 5px;
+  margin-right: 20px;
+  font-size: medium;
+}
+.btns > button > img {
+  display: flex;
+  position: absolute;
+  left: 10px;
+  margin-top: 10px;
+  z-index: 12;
+}
+.btns > button > select {
+  display: flex;
+  color: whitesmoke;
+  padding: 5px 30px;
+  padding-right: 5px;
+  border-radius: 4px;
+  background: none;
+  font-size: 95%;
+}
+#tri {
+  position: absolute;
+  z-index: 13;
+  left: 39%;
+  top: -4px;
+}
+
+#signin {
+  background-color: rgb(229, 9, 20);
+  border: none;
+  font-weight: 100;
+  border-radius: 5px;
+  color: white;
+  font-weight: bold;
+  font-size: small;
+  padding: 8px 16px;
+}
+#signin:hover {
+  background-color: rgb(194, 4, 14);
+  color: antiquewhite;
+}
+.content_1 {
+  display: block;
+  position: relative;
+  z-index: 10;
+  color: white;
+  font-family: Netflix Sans, Helvetica Neue, Segoe UI, Roboto, Ubuntu,
+    sans-serif;
+  width: 100%;
+  margin-top: 15%;
+}
+.content {
+  display: flex;
+  position: relative;
+}
+.content_1 > h1 {
+  display: flex;
+  margin-left: 17%;
+  font-size: 280%;
+  font-weight: 800;
+}
+.content_1 > h4 {
+  display: flex;
+  margin-left: 36%;
+  color: whitesmoke;
+  margin-top: 1%;
+  font-size: 150%;
+  font-weight: 480;
+}
+.content_1 > h5 {
+  display: flex;
+  color: whitesmoke;
+
+  margin-top: 1%;
+  font-size: 120%;
+  font-weight: 400;
+  margin-left: 28%;
+}
+.gtstrt {
+  display: flex;
+  position: absolute;
+  margin-left: 29%;
+  margin-top: 1%;
+}
+.inputfild {
+  display: block;
+  position: relative;
+  border: 1px solid rgba(146, 146, 146, 0.712);
+  border-radius: 3px;
+  padding-right: 185px;
+
+  background: rgba(70, 90, 126, 0.4);
+}
+.active,
+.inputfild:checked {
+  border: 1px double rgba(146, 146, 146, 0.986);
+}
+
+.inputfild > label {
+  display: block;
+  position: absolute;
+  z-index: 5;
+  font-size: small;
+  color: rgba(255, 255, 255, 0.774);
+  position: relative;
+}
+.inputfild > input {
+  display: block;
+  position: relative;
+  z-index: 1;
+  background: none;
+  border: none;
+  outline: none;
+  display: flex;
+  padding: 9px;
+}
+.getstrtedbtn {
+  display: block;
+  border-radius: 4px;
+  margin-left: 10px;
+}
+#strbtn {
+  display: block;
+  width: auto;
+  padding: 9px;
+  padding-left: 27px;
+
+  border: none;
+  border-radius: 4px;
+  background-color: rgb(229, 9, 20);
+  color: white;
+  font-size: x-large;
+  font-weight: 600;
+}
+#strbtn > div > img {
+  height: 20px;
+  width: auto;
+  padding-right: 20px;
+}
+
+#strbtn:hover {
+  background-color: rgb(194, 4, 14);
+  color: antiquewhite;
+}
+
+.space {
+  height: 10px;
+  width: 100%;
+  background: rgb(34, 29, 29);
+}
+
+.main_2 {
+  display: flex;
+  font-family: Netflix Sans, Helvetica Neue, Segoe UI, Roboto, Ubuntu,
+    sans-serif;
+
+  width: auto;
+}
+.main_2 > div {
+  display: flex;
+  background: black;
+  color: white;
+}
+.main_2 > div > div {
+  position: relative;
+  margin-top: 10%;
+  margin-left: 12%;
+}
+.main_2 > div > div > h1 {
+  display: flex;
+  font-size: 300%;
+  font-weight: 900;
+  padding-bottom: 5px;
+}
+.main_2 > div > div > h2 {
+  display: flex;
+  font-weight: 450;
+}
+.main_2 > div > img {
+  position: relative;
+  height: 65vh;
+  width: 75%;
+  display: flex;
+  margin-right: 12%;
+  margin-top: 4%;
+  margin-bottom: 5%;
+  z-index: 10;
+}
+.main_2 > div > video {
+  height: 39vh;
+  width: 32%;
+  display: flex;
+  position: absolute;
+  z-index: 5;
+  left: 53.7%;
+  top: 120%;
+}
+
+.main_3 {
+  background: black;
+  font-family: Netflix Sans, Helvetica Neue, Segoe UI, Roboto, Ubuntu,
+    sans-serif;
+}
+.main_3 > div {
+  display: flex;
+  position: relative;
+  height: auto;
+  width: auto;
+}
+.main_3 > div > img {
+  height: 30%;
+  width: 38%;
+  position: relative;
+  margin-left: 11%;
+  margin-top: 5%;
+  margin-bottom: 5%;
+
+  z-index: 1;
+}
+.main_3 > div > .m3cnt1 {
+  display: flex;
+  position: absolute;
+  background: black;
+  height: 19%;
+  width: 20%;
+  border: 2px solid grey;
+  border-radius: 15px;
+  color: white;
+  z-index: 15;
+  margin-top: 22.6%;
+  margin-left: 20%;
+}
+.main_3 > div > div > #m3img1 {
+  display: block;
+  height: 80px;
+  width: 60px;
+  margin-top: 8px;
+  margin-left: 10px;
+  border-radius: 4px;
+}
+.main_3 > div > div > div {
+  display: block;
+  padding-left: 12px;
+  padding-top: 37px;
+}
+.main_3 > div > div > div > p1 {
+  display: block;
+  font-size: 100%;
+  font-weight: 700;
+}
+.main_3 > div > div > div > p2 {
+  display: block;
+  color: rgb(54, 96, 212);
+  font-size: 90%;
+  font-weight: 490;
+}
+.main_3 > div > div > #m3img2 {
+  display: flex;
+  height: 50px;
+  width: 50px;
+  margin-top: 32px;
+  padding-left: 7px;
+}
+.m3cnt3 {
+  display: block;
+  position: relative;
+  color: white;
+  height: auto;
+  width: auto;
+  border: none;
+  margin-top: 12%;
+  margin-right: 11%;
+}
+.m3cnt3 > h1 {
+  display: flex;
+  font-size: 300%;
+  font-weight: 800;
+}
+.m3cnt3 > h2 {
+  display: flex;
+  font-weight: 400;
+}
+
+.main_4 {
+  display: flex;
+  font-family: Netflix Sans, Helvetica Neue, Segoe UI, Roboto, Ubuntu,
+    sans-serif;
+
+  width: auto;
+}
+.main_4 > div {
+  display: flex;
+  background: black;
+  color: white;
+}
+.main_4 > div > div {
+  position: relative;
+  margin-top: 10%;
+  margin-left: 12%;
+  margin-bottom: 10px;
+}
+.main_4 > div > div > h1 {
+  display: flex;
+  font-size: 300%;
+  font-weight: 900;
+  padding-bottom: 5px;
+}
+.main_4 > div > div > h2 {
+  display: flex;
+  font-weight: 450;
+}
+.main_4 > div > img {
+  position: relative;
+  height: 65vh;
+  width: 75%;
+  display: flex;
+  margin-right: 12%;
+  margin-top: 4%;
+  margin-bottom: 5%;
+  z-index: 10;
+}
+.main_4 > div > video {
+  height: 39vh;
+  width: 27%;
+  display: flex;
+  position: absolute;
+  z-index: 5;
+  left: 53.7%;
+  top: 289%;
+}
+.main_5 {
+  display: flex;
+  font-family: Netflix Sans, Helvetica Neue, Segoe UI, Roboto, Ubuntu,
+    sans-serif;
+
+  width: auto;
+}
+.main_5 > div {
+  display: flex;
+  background: black;
+}
+.main_5 > div > img {
+  display: flex;
+  margin-left: 5%;
+}
+.main_5 > div > div {
+  display: block;
+  color: white;
+  margin-right: 10%;
+  margin-top: 10%;
+}
+.main_5 > div > div > h1 {
+  display: flex;
+  font-size: 300%;
+  font-weight: 900;
+  padding-bottom: 5px;
+}
+.main_5 > div > div > h2 {
+  display: flex;
+  font-weight: 450;
+}
+.faq {
+  background: black;
+  color: white;
+  position: relative;
+}
+.faq > h1 {
+  margin-left: 27%;
+  padding-top: 5%;
+  font-size: 300%;
+  font-weight: 900;
+  padding-bottom: 2%;
+}
+
+.accordion {
+  background-color: rgb(45 45 45);
+  color: white;
+  cursor: pointer;
+  width: 60%;
+  margin-left: 20%;
+  padding: 25px;
+  font-size: x-large;
+  text-align: left;
+  border: none;
+  outline: none;
+  transition: 0.4s;
+  margin-bottom: 10px;
+}
+
+.active,
+.accordion:hover {
+  background-color: rgb(83, 83, 83);
+}
+
+.panel {
+  margin-top: 1px;
+  background-color: rgb(45 45 45);
+  width: 56%;
+  margin-left: 20%;
+  padding: 25px;
+  font-size: x-large;
+  margin-bottom: 10px;
+
+  display: none;
+  overflow: hidden;
+}
+
+.gtstrt1 {
+  display: block;
+  position: absolute;
+  background: black;
+  width: 100%;
+  padding-top: 5%;
+}
+.gtstrt1 > h1 {
+  display: block;
+  color: whitesmoke;
+  font-size: 120%;
+  font-weight: 400;
+  margin-left: 26%;
+}
+.gtstrt1 > div {
+  display: flex;
+  margin-left: 25%;
+  margin-top: 5px;
+}
+.inputfild1 {
+  display: block;
+  position: relative;
+  border: 1px solid rgba(8, 83, 8, 0.712);
+  border-radius: 3px;
+  padding-right: 250px;
+  height: 10%;
+  background: rgba(70, 90, 126, 0.4);
+}
+
+.inputfild1 > label {
+  display: block;
+  position: absolute;
+  z-index: 5;
+  font-size: small;
+  color: rgba(255, 255, 255, 0.774);
+  position: relative;
+}
+.inputfild1 > input {
+  display: block;
+  position: relative;
+  z-index: 1;
+  background: none;
+  border: none;
+  outline: none;
+  display: flex;
+  padding: 9px;
+}
+
+.getstrtedbtn1 {
+  display: block;
+  border-radius: 4px;
+  margin-left: 10px;
+}
+#strbtn1 {
+  display: block;
+  width: auto;
+  padding: 9px;
+  padding-left: 27px;
+
+  border: none;
+  border-radius: 4px;
+  background-color: rgb(229, 9, 20);
+  color: white;
+  font-size: x-large;
+  font-weight: 600;
+}
+#strbtn1:hover {
+  background-color: rgb(194, 4, 14);
+  color: antiquewhite;
+}
+#strbtn1 > div > img {
+  height: 20px;
+  width: auto;
+  padding-right: 20px;
+}
+.foter
+{
+  height: auto;
+  width: auto;
+  background: black;
+
+}
+.foter>h3
+{
+  display: flex;
+  position: relative;
+  color: rgba(255, 255, 255, 0.589);
+  padding-top: 13%;
+  margin-left: 23%;
+}
+.grid-container
+{
+  display: grid;
+  background: black;
+  grid-template-columns:auto auto auto auto;
+  column-gap: 5px;
+  padding-left: 15%;
+  padding-right: 10%;
+  padding-top: 2%;
+  
+}
+.items> a:link
+{
+  color: rgba(255, 255, 255, 0.418);
+}
+
+
+.lstbtn
+{
+  background: black;
+  padding-top: 5%;
+  padding-left: 15%;
+  padding-bottom: 15%;
+  
+}
+.lstbtn>button
+{
+  background-color: black;
+  border-radius: 5px;
+  margin-right: 20px;
+  font-size: large;
+
+}
+.lstbtn>button>select {
+  color: whitesmoke;
+  padding: 5px 30px;
+  padding-right: 5px;
+  border-radius: 4px;
+  background: none;
+  font-size: 95%;
+}
+.lstbtn>button> img {
+  display: flex;
+  position: absolute;
+  left: 16%;
+  z-index: 12;
+}
+.lstbtn>h4
+{
+  padding-top: 4%;
+  font-weight: 100;
+  color: rgba(255, 255, 255, 0.753);
+}
